@@ -1,35 +1,34 @@
-import { Link } from 'react-router-dom';
+import { Link } from "react-router-dom";
 // eslint-disable-next-line no-unused-vars
-import React from 'react';
+import React from "react";
 // eslint-disable-next-line no-unused-vars
-import domoda  from '../assets/domoda.jpg';
+import domoda from "../assets/domoda.jpg";
 export default function LandingPage() {
   return (
     <>
       <div className="flex flex-col min-h-screen">
-        <main className="flex-1">
-          <section className="bg-primary text-primary-foreground">
-
-            <div className="container flex flex-col items-center gap-10 px-4 py-18 md:flex-row md:gap-30 md:py-24 md:pr-0">
-
-              <div className="max-w-md space-y-4">
-                <h1 className="text-3xl  font-bold tracking-tighter sm:text-4xl md:text-5xl"
-                    style={{marginBottom: '75px'}}>
+       
+          <section className=" text-primary-foreground">
+            <div className="px-4 lg:px-6 xl:px-8 mx-auto py-10 grid items-center gap-10 md:gap-6 md:grid-cols-2">
+              <div className="flex-1 space-y-4">
+                <h1
+                  className="text-center md:text-left font-bold tracking-tighter text-3xl md:text-4xl xl:text-5xl"
+                  
+                >
                   Discover the Flavors of Gambian Cuisine
                 </h1>
 
-                <p className="mt-5 text-muted-foreground"
-                    style={{marginBottom: '25px',
-                    fontSize: '20px',
-                    marginTop: '-10px'
-                    }}>
-
-                  Gambian Food is your gateway to the rich and vibrant culinary traditions of The Gambia. Explore authentic
-                  Gambian dishes, learn to cook them, and immerse yourself in the cultural heritage of this West African
-                  nation.
+                <p
+                  className="text-muted-foreground text-center md:text-left mx-auto max-w-[65ch]"
+                
+                >
+                  Gambian Food is your gateway to the rich and vibrant culinary
+                  traditions of The Gambia. Explore authentic Gambian dishes,
+                  learn to cook them, and immerse yourself in the cultural
+                  heritage of this West African nation.
                 </p>
-                <div className="flex gap-10">
-                  <Link 
+                <div className="flex gap-10 items-center justify-center md:justify-start">
+                  <Link
                     className="inline-flex h-9 items-center justify-center rounded-md bg-primary-foreground px-4 py-2 text-sm font-medium text-primary shadow transition-colors hover:text-white hover:bg-[#556B2F]"
                     to="./pages/Ingredients"
                   >
@@ -37,25 +36,21 @@ export default function LandingPage() {
                   </Link>
                   <Link
                     className="inline-flex h-9 items-center justify-center rounded-md bg-primary-foreground px-4 py-2 text-sm font-medium text-primary shadow transition-colors hover:text-white hover:bg-[#556B2F]"
-                     to="./pages/CookingGuide"
+                    to="./pages/CookingGuide"
                   >
                     Learn to Cook
                   </Link>
                 </div>
               </div>
-              <div style={{marginLeft: '25px', }}>
-              <img
-              src='/assets/benachin.jpg'
-                // src="https://i.ytimg.com/vi/u16Yodhdjr4/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLDXxczczRifqsGVsH9GotbirQG3zQ"
-                width="600"
-                height="400"
-                alt="Gambian Cuisine"
-                className="rounded-xl object-cover"
-                style={{ aspectRatio: '550 / 400'}}
-              />
+              <div className="mx-auto">
+                <img
+                  src="/assets/benachin.jpg"
+                  // src="https://i.ytimg.com/vi/u16Yodhdjr4/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLDXxczczRifqsGVsH9GotbirQG3zQ"
+                  alt="Gambian Cuisine"
+                  className="rounded-xl max-w-[600px] w-full max-h-[400px] h-full object-cover aspect-[550_/_400]"
+                />
               </div>
-             
-          </div>
+            </div>
           </section>
           {/* <section className="py-12 md:py-24">
             <div className="container grid gap-12 px-4 md:grid-cols-2 lg:grid-cols-3">
@@ -185,7 +180,7 @@ export default function LandingPage() {
               </div>
             </div>
           </section> */}
-        </main>
+       
         {/* <footer className="bg-background py-4 text-center text-sm text-muted-foreground">
           <p>© 2024 GamFood. All rights reserved.</p>
         </footer> */}
@@ -193,4 +188,3 @@ export default function LandingPage() {
     </>
   );
 }
-

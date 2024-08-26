@@ -9,12 +9,15 @@ function Home() {
     <div>
       <LandingPage />
       <div className="py-4" id="asdf">
-      <h1 className="text-5xl py-3 border-spacing-2 font-bold text-center font-poppins">NAKSIN EMPIRE</h1>
+        <h1 className="text-5xl py-3 border-spacing-2 font-bold text-center font-poppins">
+          NAKSIN EMPIRE
+        </h1>
         <h2 className="max-w-[60ch] mx-auto text-xl  text-center px-3">
-          Have a snippet of some of the diverse dishes and culinary delights of the Gambian people.
+          Have a snippet of some of the diverse dishes and culinary delights of
+          the Gambian people.
         </h2>
-        </div>
-    
+      </div>
+
       <div className="w-full  grid  grid-cols-2">
         {dishes.map((dish) => (
           <div key={dish.id}>
@@ -35,11 +38,8 @@ function Home() {
           </div>
         ))}
       </div>
-      <div className="w-full h-16 mt-10">
-
-      </div>
+      <div className="w-full h-16 mt-10"></div>
     </div>
-
   );
 }
 export default Home;

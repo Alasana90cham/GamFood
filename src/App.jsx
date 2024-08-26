@@ -13,10 +13,9 @@ function App() {
   return (
     <>
       <Router>
-    <div className="container">
       <Navbar className="fixed top-0 left-0 w-full z-50 flex items-center justify-between p-5 m-2 bg-white-600 shadow-lg"/>
       
-      <main>
+      <main className=''>
         <Routes>
           <Route path="/" element={<Home />} />
           {/* <Route path="/ingredients" element={<Ingredients />} /> 
@@ -24,7 +23,6 @@ function App() {
           <Route path="/about" element={<About />} /> */}
         </Routes>
         </main>
-    </div>
     </Router>
       
     </>
