@@ -18,19 +18,21 @@ function Home() {
         </h2>
       </div>
 
-      <div className="w-full  grid  grid-cols-2">
+      <div className="w-full  grid sm:grid-cols-1 md:grid-cols-2 gap-4">
         {dishes.map((dish) => (
           <div key={dish.id}>
             <div className="container mx-auto p-4">
-              <h1 className="text-2xl font-bold mb-4">{dish.name}</h1>
+              <h1 className="text-2xl font-bold mb-4 sm:mb-2">{dish.name}</h1>
 
               <div className="space-x-4">
-                <div className="grid w-full grid-cols-2 p-4 shadow-lg rounded-lg">
-                  <p className="text-base">{dish.description}</p>
+
+                <div className="grid sm:grid-cols-1 md:grid-cols-2 sm:gap-y-4 gap-4 p-4 shadow-lg rounded-lg">
+
+                  <p className="text-base sm:text-xl">{dish.description}</p>
                   <img
                     src={dish.imageUrl}
                     alt={dish.name}
-                    className="w-full h-60 object-cover rounded-lg"
+                    className="w-full h-60 object-cover rounded-lg "
                   />
                 </div>
               </div>

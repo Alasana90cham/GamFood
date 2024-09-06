@@ -15,19 +15,14 @@ const Navbar = () => {
               GamFood
             </span>
           </Link>
-          <nav className="hidden gap-4 text-sm font-larger md:flex bg-primary-500/5">
+          <nav className="hidden gap-4 text-sm font-larger md:flex bg-primary-500/50 font-bold">
             <Link
               className="hover:text-[#FFD700] hover:underline-none text-[#FFFFF0]"
               to="/"
             >
               Home
             </Link>
-            <a
-              className="hover:text-[#FFD700] hover:underline-none text-[#FFFFF0]"
-              href="#asdf"
-            >
-              Home
-            </a>
+            
             <Link
               className="hover:text-[#FFD700] text-[#FFFFF0]"
               to="/ingeridients"
