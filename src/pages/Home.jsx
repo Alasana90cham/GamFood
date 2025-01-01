@@ -4,17 +4,20 @@ import { dishes } from "../data/dishes";
 import LandingPage from "../components/LandingPage";
 import { Link } from "react-router-dom";
 
+import { TextEffect } from "../components/TextEffect";
+
 function Home() {
   return (
     <div>
       <LandingPage />
-      <div className="py-4" id="asdf">
-        <h1 className="text-5xl py-3 border-spacing-2 font-bold text-center font-poppins">
-          NAKSIN EMPIRE
-        </h1>
-        <h2 className="max-w-[60ch] mx-auto text-xl  text-center px-3">
-          Have a snippet of some of the diverse dishes and culinary delights of
-          the Gambian people.
+      <div className="max-w-[60ch] mx-auto px-3 pt-0 pb-5 text-5xl  border-spacing-2 font-bold text-center font-poppins">
+        <TextEffect as="span" per="char">GAMBIAN CUISINES </TextEffect>
+          
+        <h2 className="max-w-[50ch] mx-auto px-3 text-2xl  border-spacing-2 font-bold text-center font-poppins">
+          <TextEffect as="span" per="char"> 
+           Have a snippet of some of the diverse dishes and culinary delights of the Gambian people.
+            
+            </TextEffect>  
         </h2>
       </div>
 
